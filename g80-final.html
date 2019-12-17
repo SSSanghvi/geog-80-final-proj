@@ -20,5 +20,99 @@
 			</div>
 		</div>
 	</section>
-	
+	<br>
+	<section class="container is-widescreen writeup">
+		<p>
+			For better or for worse, there are many factors that play a part in someone's economic situation. One of the more influential ones is location - one's situation could be improved by being near many job opportunities, having access to public transit stations, living in wealthier cities with more money to spend on social benefit, etc. 
+		</p><br>
+		<p>
+			However, due to many factors that are out of the scope of this article, we tend to see income shaping where and with whom people live. This leads to pockets of low income and high income people across  any area one looks at. A side effect of this phenomenon is something called a food desert.
+		</p><br>
+		<p>
+			A food desert is a geographic area which contains a significant portion of low-income people, who may have significant difficulty in obtaining fresh and/or healthy food items like fresh produce due to a lack of supermarkets and large grocery stores in the area (1). This problem is further propagated due to the fact that a large portion of the affected population does not have access to a car, meaning they cannot drive to further supermarkets. As a result of this phenomenon, the affected often buy and consume cheap fast food or low quality and not fresh food items from nearby stores, which leads to a multitude of health issues in the food desert (1)
+		</p><br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<div class="box">
+			<p style="font-style: italic;">
+				"Of all households in the United States, 2.3 million, or 2.2 percent, live more than a mile from a supermarket and do not have access to a vehicle. An additional 3.4 million households, or 3.2 percent of all households, live between one-half to 1 mile and do not have access to a vehicle."
+			</p>
+			<p>
+				<a href="https://www.ers.usda.gov/amber-waves/2010/march/access-to-affordable-nutritious-food-is-limited-in-food-deserts/" class="button is-small is-info is-outlined" style="font-style: normal;">
+					Source (ers.usda.gov)
+				</a>
+			</p>
+		</div>
+		<br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<p>
+			In this project, I am looking at food deserts in the Los Angeles County. Food deserts are a problem that we see worldwide, both in rural and urban areas.  However, the conditions for defining them are different, because people who live in rural areas will almost certainly have some form of long-range transport (usually an automobile) due to the nature of rural living. In an urban setting like Los Angeles, the United States Department of Agriculture defines a food desert as such:
+		</p>
+		<br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<div class="box">
+			<p style="font-style: italic;">
+				"... we define food deserts as low-income tracts in which a substantial number or proportion of the population has low access to supermarkets or large grocery stores. Low-income tracts are characterized by either a poverty rate equal to or greater than 20 percent, or a median family income that is 80 percent or less of the metropolitan area’s median family income (for tracts in metropolitan areas) ... "
+			</p>
+			<p>
+				<a href="https://www.ers.usda.gov/webdocs/publications/45014/30940_err140.pdf" class="button is-small is-info is-outlined" style="font-style: normal;">
+					Source (ers.usda.gov)
+				</a>
+			</p>
+		</div>
+		<br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<p>
+			So, where are the low income areas in LA? As the USDA does, I will use census tracts in my maps. These are determined by the census bureau and, in theory, have roughly the same number of people in each. The map below shows the low income census tracts in LA, which I got directly from my first dataset (all datasets and sources are listed at the bottom).
+		</p>
+		<br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<iframe width="100%" height="520" frameborder="0" src="https://sssanghvi.carto.com/builder/57642278-0f9b-45a7-a3da-6eff9fd08d3b/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</section>
+
+<section class="container is-widescreen writeup">
+		<p>
+			As we can see, the downtown core as well as the northeast corner of the county have significant levels of low-income tracts. The western portion (Malibu and the Hollywood Hills) are not low income, as expected. Now that we have this data, I can plot the locations of Farmer's Markets - a great alternative to grocery stores in this case, providing fresh produce to areas that don't have nearby supermarkets. The Farmer's markets are plotted below, with rings at every 0.25 mile (so the outermost circle of each is a 1 mile radius). The reason I've chosen one mile is to match the distance standard that the federal government uses in its food accessibility studies - they use 1 mile as the benchmark for how far most people would walk for <span style="font-style: italic;">fresh</span> groceries. 
+		</p>
+		<br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<iframe width="100%" height="520" frameborder="0" src="https://sssanghvi.carto.com/builder/67e1d7fe-ad9b-4d94-b9ea-25a66ac6d6ff/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</section>
+
+	<br>
+	<section class="container is-widescreen writeup">
+		<h3 class="subtitle"> Written Commentary Sources </h3>
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<h3 class="subtitle"> Data Sources </h3>
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</section>
 </body>
+
+<style type="text/css">
+	.writeup {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20;
+		line-height: 1.5;
+	}
+</style>
