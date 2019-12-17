@@ -19,8 +19,9 @@
 				</h2>
 			</div>
 		</div>
+		<br>
 	</section>
-	<br>
+
 	<section class="container is-widescreen writeup">
 		<p>
 			For better or for worse, there are many factors that play a part in someone's economic situation. One of the more influential ones is location - one's situation could be improved by being near many job opportunities, having access to public transit stations, living in wealthier cities with more money to spend on social benefit, etc. 
@@ -79,23 +80,35 @@
 		<iframe width="100%" height="520" frameborder="0" src="https://sssanghvi.carto.com/builder/57642278-0f9b-45a7-a3da-6eff9fd08d3b/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 	</section>
 
-<section class="container is-widescreen writeup">
+	<section class="container is-widescreen writeup">
 		<p>
-			As we can see, the downtown core as well as the northeast corner of the county have significant levels of low-income tracts. The western portion (Malibu and the Hollywood Hills) are not low income, as expected. Now that we have this data, I can plot the locations of Farmer's Markets - a great alternative to grocery stores in this case, providing fresh produce to areas that don't have nearby supermarkets. The Farmer's markets are plotted below, with rings at every 0.25 mile (so the outermost circle of each is a 1 mile radius). The reason I've chosen one mile is to match the distance standard that the federal government uses in its food accessibility studies - they use 1 mile as the benchmark for how far most people would walk for <span style="font-style: italic;">fresh</span> groceries. 
+			As we can see, the downtown core as well as the northeast corner of the county have significant levels of low-income tracts. The western portion (Malibu and the Hollywood Hills) are not low income, as expected. Now that we have this data, I can plot the locations of Farmer's Markets - a great alternative to grocery stores in this case, providing fresh produce to areas that don't have nearby supermarkets. The Farmer's markets are plotted below, with rings at every 0.25 mile (so the outermost circle of each is a 1 mile radius). The reason I've chosen one mile is to match the distance standard that the federal government uses in its food accessibility studies - they use 1 mile as the benchmark for how far most people would walk for <span style="font-style: italic;">fresh</span> groceries. (2)
 		</p>
 		<br>
 	</section>
 
 	<section class="container is-widescreen writeup">
 		<iframe width="100%" height="520" frameborder="0" src="https://sssanghvi.carto.com/builder/67e1d7fe-ad9b-4d94-b9ea-25a66ac6d6ff/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	<br>
 	</section>
 
+	<section class="container is-widescreen writeup">
+		<p>
+			From observing the above graph, we can see that some farmer's markets take place very close to or within clumps of low-income tracts. These are within walkable distance, but only for those who live near the outer edges of low-income clumps of tracts. However, farmer's markets are definitely not the main source of fresh and healthy food - that would be a grocery store. While I was unable to find data on the location of specific grocery stores, the US Department of Agriculture has curated a database of food accessibility scores per census tract. Using a table join, I was able to connect the tract geometries to these scores by the GEOID field. Then, I used Jenks Clustering to put the scores into 5 buckets and colored the tracts by those buckets, along with plotting the same farmer's markets and distance rings. 
+		</p>
+		<br>
+	</section>
+
+	<section class="container is-widescreen writeup">
+		<iframe width="100%" height="520" frameborder="0" src="https://sssanghvi.carto.com/builder/a9a34a0e-bbbd-4364-a5d9-cb829d7fdaed/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 	<br>
+	</section>
+
 	<section class="container is-widescreen writeup">
 		<h3 class="subtitle"> Written Commentary Sources </h3>
 		<ol>
-			<li></li>
-			<li></li>
+			<li> <span style="font-style: italic;">Access to Affordable, Nutritious Food Is Limited in “Food Deserts”</span> by Michele Ver Ploeg. <a href="https://www.ers.usda.gov/amber-waves/2010/march/access-to-affordable-nutritious-food-is-limited-in-food-deserts/">Link (goes to usda.gov) </a></li>
+			<li><span style="font-style: italic;">Characteristics and Influential Factors of Food Deserts</span> by Paula Dutko, Michele Ver Ploeg, and Tracey Farrigan. <a href="https://www.ers.usda.gov/webdocs/publications/45014/30940_err140.pdf">Link (goes to usda.gov) </a></li>
 			<li></li>
 			<li></li>
 		</ol>
@@ -114,5 +127,8 @@
 		font-family: 'Roboto', sans-serif;
 		font-size: 20;
 		line-height: 1.5;
+	}
+	ol {
+		padding-left: 25px;
 	}
 </style>
