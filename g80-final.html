@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<section class="hero is-dark is-bold">
+	<section class="hero is-primary">
 		<div class="hero-body">
 			<div class="container">
 				<h1 class="title">
@@ -22,7 +22,7 @@
 		
 	</section>
 	<br>
-	
+
 	<section class="container is-widescreen writeup">
 		<p>
 			For better or for worse, there are many factors that play a part in someone's economic situation. One of the more influential ones is location - one's situation could be improved by being near many job opportunities, having access to public transit stations, living in wealthier cities with more money to spend on social benefit, etc. 
@@ -41,7 +41,7 @@
 				"Of all households in the United States, 2.3 million, or 2.2 percent, live more than a mile from a supermarket and do not have access to a vehicle. An additional 3.4 million households, or 3.2 percent of all households, live between one-half to 1 mile and do not have access to a vehicle."
 			</p>
 			<p>
-				<a href="https://www.ers.usda.gov/amber-waves/2010/march/access-to-affordable-nutritious-food-is-limited-in-food-deserts/" class="button is-small is-info is-outlined" style="font-style: normal;">
+				<a href="https://www.ers.usda.gov/amber-waves/2010/march/access-to-affordable-nutritious-food-is-limited-in-food-deserts/" class="button is-small is-primary is-outlined" style="font-style: normal;">
 					Source (ers.usda.gov)
 				</a>
 			</p>
@@ -62,7 +62,7 @@
 				"... we define food deserts as low-income tracts in which a substantial number or proportion of the population has low access to supermarkets or large grocery stores. Low-income tracts are characterized by either a poverty rate equal to or greater than 20 percent, or a median family income that is 80 percent or less of the metropolitan area’s median family income (for tracts in metropolitan areas) ... "
 			</p>
 			<p>
-				<a href="https://www.ers.usda.gov/webdocs/publications/45014/30940_err140.pdf" class="button is-small is-info is-outlined" style="font-style: normal;">
+				<a href="https://www.ers.usda.gov/webdocs/publications/45014/30940_err140.pdf" class="button is-small is-primary is-outlined" style="font-style: normal;">
 					Source (ers.usda.gov)
 				</a>
 			</p>
@@ -83,7 +83,7 @@
 
 	<section class="container is-widescreen writeup">
 		<p>
-			As we can see, the downtown core as well as the northeast corner of the county have significant levels of low-income tracts. The western portion (Malibu and the Hollywood Hills) are not low income, as expected. Now that we have this data, I can plot the locations of Farmer's Markets - a great alternative to grocery stores in this case, providing fresh produce to areas that don't have nearby supermarkets. The Farmer's markets are plotted below, with rings at every 0.25 mile (so the outermost circle of each is a 1 mile radius). The reason I've chosen one mile is to match the distance standard that the federal government uses in its food accessibility studies - they use 1 mile as the benchmark for how far most people would walk for <span style="font-style: italic;">fresh</span> groceries. (2)
+			As we can see, the downtown core as well as the northeast corner of the county have significant levels of low-income tracts. The western portion (Malibu and the Hollywood Hills) are not low income, as expected. Now that we have this data, I can plot the locations of Farmer's Markets - a great alternative to grocery stores in this case, providing fresh produce to areas that don't have nearby supermarkets. The Farmer's markets are plotted below, with rings at every 0.25 mile (so the outermost circle of each is a 1 mile radius and 2 mile diameter). The reason I've chosen one mile is to match the distance standard that the federal government uses in its food accessibility studies - they use 1 mile as the benchmark for how far most people would walk for <span style="font-style: italic;">fresh</span> groceries. (2)
 		</p>
 		<br>
 	</section>
@@ -106,11 +106,56 @@
 	</section>
 
 	<section class="container is-widescreen writeup">
+		<br>
+		<h2 class="title"> The Process at Play </h2>
+		<div class="tile is-ancestor">
+			<div class="tile is-vertical is-8">
+				<div class="tile">
+					<div class="tile is-parent is-vertical">
+						<article class="tile is-child box is-primary">
+							<h3 class="title is-size-5"> Dollar Stores </h3>
+							<p> ... rapidly expand into areas that they know contain large low income populations. They may stock some food, but it is almost always unhealthy and not fresh.</p>
+						</article>
+						<article class="tile is-child box">
+							<h3 class="title is-size-5"> Grocery Stores & Supermarkets</h3>
+							<p> ... are forced out of dense urban areas due to high land and rent prices, as well as a shortage of land due to the aggressive expansion of dollar stores. (3)(4)</p>
+						</article>
+					</div>
+					<div class="tile is-parent">
+						<article class="tile is-child box">
+							
+						</article>
+					</div>
+				</div>
+				<div class="tile is-parent">
+					<article class="tile is-child box">
+						<h3 class="title is-size-5"> Farmer's Markets</h3>
+						<p> ... are mostly held in areas that are not low income, because that's where they can make more money. When plotted with a 1 mile radius, we see the reasonable walking distance rarely intersects with the areas of concern for food deserts.</p>
+					</article>
+				</div>
+			</div>
+			<div class="tile is-parent">
+				<article class="tile is-child box">
+					<!-- Put any content you want -->
+				</article>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container is-widescreen writeup">
+		<iframe width="100%" height="520" frameborder="0" src="https://sssanghvi.carto.com/builder/f265621a-2e40-4330-a845-01532e00e6c4/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<br>
+	</section>
+
+
+	<section class="container is-widescreen writeup">
 		<h3 class="subtitle"> Written Commentary Sources </h3>
 		<ol>
 			<li> <span style="font-style: italic;">Access to Affordable, Nutritious Food Is Limited in “Food Deserts”</span> by Michele Ver Ploeg. <a href="https://www.ers.usda.gov/amber-waves/2010/march/access-to-affordable-nutritious-food-is-limited-in-food-deserts/">Link (goes to usda.gov) </a></li>
 			<li><span style="font-style: italic;">Characteristics and Influential Factors of Food Deserts</span> by Paula Dutko, Michele Ver Ploeg, and Tracey Farrigan. <a href="https://www.ers.usda.gov/webdocs/publications/45014/30940_err140.pdf">Link (goes to usda.gov) </a></li>
-			<li></li>
+			<li><span style="font-style: italic;">As dollar stores move into cities, residents see a steep downside</span> by Rahel Siegel. <a href="https://www.washingtonpost.com/business/economy/as-dollar-stores-move-into-cities-residents-see-a-steep-downside/2019/02/15/b3676cbe-2f09-11e9-8ad3-9a5b113ecd3c_story.html">Link (goes to washingtonpost.com) </a></li>
+			<li><span style="font-style: italic;">Dollar Stores Are Targeting Struggling Urban Neighborhoods and Small Towns. One Community Is Showing How to Fight Back.</span> by Marie Donahue and Stacy Mitchell. <a href="https://ilsr.org/dollar-stores-target-cities-towns-one-fights-back/">Link (goes to islr.org) </a></li>
 			<li></li>
 		</ol>
 		<h3 class="subtitle"> Data Sources </h3>
